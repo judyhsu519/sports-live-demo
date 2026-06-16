@@ -62,6 +62,7 @@ const schedule = events.slice(0, MAX_GAMES).map((e) => {
     sport: "MLB",
     athletes: `${homeName} vs ${awayName}`, // 主隊 vs 客隊，放最大那行
     event: detail, // 只留比分/狀態
+    state: state === "in" ? "in" : state === "post" ? "post" : "pre",
   };
 });
 

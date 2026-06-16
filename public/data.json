@@ -1,65 +1,75 @@
 {
-  "updatedAt": "2026/06/16 11:52",
+  "updatedAt": "2026/06/16 12:05",
   "schedule": [
     {
       "time": "06:40",
       "sport": "MLB",
       "athletes": "費城人 vs 馬林魚",
-      "event": "終場 7:0"
+      "event": "終場 7:0",
+      "state": "post"
     },
     {
       "time": "06:45",
       "sport": "MLB",
       "athletes": "國民 vs 皇家",
-      "event": "終場 7:3"
+      "event": "終場 7:3",
+      "state": "post"
     },
     {
       "time": "07:10",
       "sport": "MLB",
       "athletes": "紅人 vs 大都會",
-      "event": "終場 12:0"
+      "event": "終場 12:0",
+      "state": "post"
     },
     {
       "time": "07:45",
       "sport": "MLB",
       "athletes": "紅雀 vs 教士",
-      "event": "終場 3:0"
+      "event": "終場 3:0",
+      "state": "post"
     },
     {
       "time": "08:05",
       "sport": "MLB",
       "athletes": "小熊 vs 落磯",
-      "event": "終場 5:4"
+      "event": "終場 5:4",
+      "state": "post"
     },
     {
       "time": "08:05",
       "sport": "MLB",
       "athletes": "遊騎兵 vs 雙城",
-      "event": "終場 2:4"
+      "event": "終場 2:4",
+      "state": "post"
     },
     {
       "time": "08:10",
       "sport": "MLB",
       "athletes": "太空人 vs 老虎",
-      "event": "終場 3:9"
+      "event": "終場 3:9",
+      "state": "post"
     },
     {
       "time": "09:40",
       "sport": "MLB",
       "athletes": "響尾蛇 vs 天使",
-      "event": "進行中 4:2"
+      "event": "終場 4:3",
+      "state": "post"
     },
     {
       "time": "09:40",
       "sport": "MLB",
       "athletes": "運動家 vs 海盜",
-      "event": "進行中 6:1"
+      "event": "進行中 11:1",
+      "state": "in"
     },
     {
       "time": "10:00",
       "sport": "MLB",
       "athletes": "道奇 vs 光芒",
-      "event": "進行中 3:3"
+      "event": "進行中 3:3",
+      "state": "in"
     }
   ]
 }

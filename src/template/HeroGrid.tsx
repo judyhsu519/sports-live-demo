@@ -177,6 +177,10 @@ const HeroCard: React.FC<{ item: ScheduleItem; index: number; localFrame: number
   const bob = 8 * envelope * Math.sin(((2 * Math.PI) / bobPeriod) * t - index * (Math.PI / 2));
   const y = entranceY + bob;
 
+  // 進行中：紅框＋發光，比分前加閃爍紅點
+  const live = item.state === "in";
+  const pulse = 0.35 + 0.65 * (0.5 + 0.5 * Math.sin((frame / fps) * Math.PI * 2)); // ~1 秒一閃
+
   return (
     <div
       style={{
@@ -184,8 +188,9 @@ const HeroCard: React.FC<{ item: ScheduleItem; index: number; localFrame: number
         minWidth: 0,
         transform: `translateY(${y}px)`,
         opacity,
-        background: "#0e1330",
-        border: "1px solid rgba(255,255,255,0.08)",
+        background: live ? "#1a1130" : "#0e1330",
+        border: live ? "2px solid #ff5a5f" : "1px solid rgba(255,255,255,0.08)",
+        boxShadow: live ? "0 0 18px rgba(255,90,95,0.45)" : "none",
         borderRadius: 12,
         padding: "12px 14px",
         display: "flex",
@@ -225,18 +230,39 @@ const HeroCard: React.FC<{ item: ScheduleItem; index: number; localFrame: number
 
       <div style={{ fontSize: 40, fontWeight: 900 }}>{item.time}</div>
 
-      <div
-        style={{
-          fontSize: 24,
-          color: "rgba(255,255,255,0.85)",
-          whiteSpace: "nowrap",
-          overflow: "hidden",
-          textOverflow: "ellipsis",
-          maxWidth: "100%",
-        }}
-      >
-        {item.event}
-      </div>
+      {live ? (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 8,
+            fontSize: 24,
+            fontWeight: 700,
+            color: "#ff7a7e",
+            whiteSpace: "nowrap",
+            maxWidth: "100%",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+          }}
+        >
+          <span style={{ color: "#ff3b3f", opacity: pulse, fontSize: 18 }}>●</span>
+          {item.event}
+        </div>
+      ) : (
+        <div
+          style={{
+            fontSize: 24,
+            color: "rgba(255,255,255,0.85)",
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            maxWidth: "100%",
+          }}
+        >
+          {item.event}
+        </div>
+      )}
     </div>
   );
 };

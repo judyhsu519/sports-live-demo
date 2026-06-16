@@ -3,8 +3,9 @@
 export interface ScheduleItem {
   time: string; // 顯示用時間，如「09:40」（台灣時間）
   sport: string; // 運動／聯盟，如「MLB」
-  event: string; // 細項，如「對 馬林魚　終場 7:0」
-  athletes: string; // 主角（這裡放主隊名），卡片最大、黃色那行
+  event: string; // 細項，如「終場 7:0」
+  athletes: string; // 對戰組合，如「費城人 vs 馬林魚」，卡片最大、黃色那行
+  state: "pre" | "in" | "post"; // 尚未開打 / 進行中 / 已結束 → 進行中會特別標示
 }
 
 export interface BoardData {
