@@ -210,7 +210,7 @@ const HeroCard: React.FC<{ item: ScheduleItem; index: number; localFrame: number
 
       <div
         style={{
-          fontSize: 50,
+          fontSize: 42,
           fontWeight: 900,
           color: "#FFD24D",
           lineHeight: 1.1,

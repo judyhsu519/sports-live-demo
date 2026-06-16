@@ -1,65 +1,65 @@
 {
-  "updatedAt": "2026/06/16 11:38",
+  "updatedAt": "2026/06/16 11:52",
   "schedule": [
     {
       "time": "06:40",
       "sport": "MLB",
-      "athletes": "費城人",
-      "event": "對 馬林魚　終場 7:0"
+      "athletes": "費城人 vs 馬林魚",
+      "event": "終場 7:0"
     },
     {
       "time": "06:45",
       "sport": "MLB",
-      "athletes": "國民",
-      "event": "對 皇家　終場 7:3"
+      "athletes": "國民 vs 皇家",
+      "event": "終場 7:3"
     },
     {
       "time": "07:10",
       "sport": "MLB",
-      "athletes": "紅人",
-      "event": "對 大都會　終場 12:0"
+      "athletes": "紅人 vs 大都會",
+      "event": "終場 12:0"
     },
     {
       "time": "07:45",
       "sport": "MLB",
-      "athletes": "紅雀",
-      "event": "對 教士　終場 3:0"
+      "athletes": "紅雀 vs 教士",
+      "event": "終場 3:0"
     },
     {
       "time": "08:05",
       "sport": "MLB",
-      "athletes": "小熊",
-      "event": "對 落磯　終場 5:4"
+      "athletes": "小熊 vs 落磯",
+      "event": "終場 5:4"
     },
     {
       "time": "08:05",
       "sport": "MLB",
-      "athletes": "遊騎兵",
-      "event": "對 雙城　終場 2:4"
+      "athletes": "遊騎兵 vs 雙城",
+      "event": "終場 2:4"
     },
     {
       "time": "08:10",
       "sport": "MLB",
-      "athletes": "太空人",
-      "event": "對 老虎　終場 3:9"
+      "athletes": "太空人 vs 老虎",
+      "event": "終場 3:9"
     },
     {
       "time": "09:40",
       "sport": "MLB",
-      "athletes": "響尾蛇",
-      "event": "對 天使　進行中 4:2"
+      "athletes": "響尾蛇 vs 天使",
+      "event": "進行中 4:2"
     },
     {
       "time": "09:40",
       "sport": "MLB",
-      "athletes": "運動家",
-      "event": "對 海盜　進行中 6:1"
+      "athletes": "運動家 vs 海盜",
+      "event": "進行中 6:1"
     },
     {
       "time": "10:00",
       "sport": "MLB",
-      "athletes": "道奇",
-      "event": "對 光芒　進行中 3:3"
+      "athletes": "道奇 vs 光芒",
+      "event": "進行中 3:3"
     }
   ]
 }

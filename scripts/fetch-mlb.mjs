@@ -50,16 +50,18 @@ const schedule = events.slice(0, MAX_GAMES).map((e) => {
   const hs = home.score ?? "";
   const as = away.score ?? "";
 
+  const homeName = zhName(home.team || {});
+  const awayName = zhName(away.team || {});
   let detail;
-  if (state === "post") detail = `對 ${zhName(away.team || {})}　終場 ${hs}:${as}`;
-  else if (state === "in") detail = `對 ${zhName(away.team || {})}　進行中 ${hs}:${as}`;
-  else detail = `對 ${zhName(away.team || {})}`;
+  if (state === "post") detail = `終場 ${hs}:${as}`;
+  else if (state === "in") detail = `進行中 ${hs}:${as}`;
+  else detail = "尚未開打";
 
   return {
     time: twTime(e.date),
     sport: "MLB",
-    athletes: zhName(home.team || {}), // 主隊當「主角」放最大那行
-    event: detail,
+    athletes: `${homeName} vs ${awayName}`, // 主隊 vs 客隊，放最大那行
+    event: detail, // 只留比分/狀態
   };
 });
 
