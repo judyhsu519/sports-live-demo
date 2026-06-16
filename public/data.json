@@ -1,0 +1,65 @@
+{
+  "updatedAt": "2026/06/16 11:38",
+  "schedule": [
+    {
+      "time": "06:40",
+      "sport": "MLB",
+      "athletes": "費城人",
+      "event": "對 馬林魚　終場 7:0"
+    },
+    {
+      "time": "06:45",
+      "sport": "MLB",
+      "athletes": "國民",
+      "event": "對 皇家　終場 7:3"
+    },
+    {
+      "time": "07:10",
+      "sport": "MLB",
+      "athletes": "紅人",
+      "event": "對 大都會　終場 12:0"
+    },
+    {
+      "time": "07:45",
+      "sport": "MLB",
+      "athletes": "紅雀",
+      "event": "對 教士　終場 3:0"
+    },
+    {
+      "time": "08:05",
+      "sport": "MLB",
+      "athletes": "小熊",
+      "event": "對 落磯　終場 5:4"
+    },
+    {
+      "time": "08:05",
+      "sport": "MLB",
+      "athletes": "遊騎兵",
+      "event": "對 雙城　終場 2:4"
+    },
+    {
+      "time": "08:10",
+      "sport": "MLB",
+      "athletes": "太空人",
+      "event": "對 老虎　終場 3:9"
+    },
+    {
+      "time": "09:40",
+      "sport": "MLB",
+      "athletes": "響尾蛇",
+      "event": "對 天使　進行中 4:2"
+    },
+    {
+      "time": "09:40",
+      "sport": "MLB",
+      "athletes": "運動家",
+      "event": "對 海盜　進行中 6:1"
+    },
+    {
+      "time": "10:00",
+      "sport": "MLB",
+      "athletes": "道奇",
+      "event": "對 光芒　進行中 3:3"
+    }
+  ]
+}

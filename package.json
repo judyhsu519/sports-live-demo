@@ -1,0 +1,27 @@
+{
+  "name": "sports-live-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "獨立實驗：免費運動 API（ESPN MLB）→ 版型 C 卡片牆 → 可分享、會自動更新的網頁。與 asiad-dooh 完全分開。",
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-mlb.mjs",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@remotion/player": "4.0.290",
+    "@remotion/google-fonts": "4.0.290",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.290"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  }
+}
