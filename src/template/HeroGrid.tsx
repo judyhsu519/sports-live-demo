@@ -22,7 +22,12 @@ export const HeroGrid: React.FC<{
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const sorted = [...items].sort((a, b) => a.time.localeCompare(b.time));
+  // 排序：進行中 → 即將開打 → 已結束；同組內再按時間。讓看板更有「現在進行式」感。
+  const order: Record<string, number> = { in: 0, pre: 1, post: 2 };
+  const sorted = [...items].sort((a, b) => {
+    const d = (order[a.state] ?? 9) - (order[b.state] ?? 9);
+    return d !== 0 ? d : a.time.localeCompare(b.time);
+  });
   const pages = sorted.length ? chunk(sorted, PER_PAGE) : [];
   const pageCount = pages.length;
   const framesPerPage = pageCount > 0 ? totalFrames / pageCount : totalFrames;
