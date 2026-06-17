@@ -4,7 +4,9 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "0 * * * *" # 每小時：自動抓最新 MLB 賽事並重新上線
+    # GitHub 排程是「盡力而為」，整點(:00)最壅塞、常被延遲或整段跳過。
+    # 改成每 30 分鐘、且避開整點(:17、:47)，讓「至少每小時更新一次」更可靠。
+    - cron: "17,47 * * * *"
   workflow_dispatch: {} # 也可手動觸發
 
 permissions:
